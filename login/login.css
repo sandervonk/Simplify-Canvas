@@ -36,6 +36,13 @@ body.ic-Login-Body .ic-Input.text {
   background-color: white !important;
   width: 70% !important;
   margin: 0px auto !important;
+  padding: 8px !important;
+  padding-left: 25px !important;
+  font-size: 14px !important;
+  color: rgb(108, 108, 108) !important;
+}
+body.ic-Login-Body .ic-Input.text:hover {
+  background-color: rgb(223, 243, 253) !important;
 }
 /* remove excessive links */
 body.ic-Login-Body .ic-Login-header__links {
@@ -119,8 +126,8 @@ body.ic-Login-Body .ic-Login__forgot {
   color: whitesmoke;
   text-transform: uppercase;
   background: #c6423c;
-  border: solid medium !important;
-  border-color: transparent;
+  border: solid medium #c6423c !important;
+  border-color: #c6423c !important;
   font-size: 14px;
   line-height: 25px !important;
   height: 40px !important;
