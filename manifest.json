@@ -19,7 +19,8 @@
        "512": "icon/3DLogo.png"
       },
     "content_scripts": [{
-      "css": ["tweaks.css", "login.css"],
+      "css": ["tweaks.css", "login/login.css"],
+      "js": ["login/login.js"]
       "matches": ["https://*.instructure.com/*"]
     }]
    

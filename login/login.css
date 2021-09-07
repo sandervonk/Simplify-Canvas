@@ -2,11 +2,19 @@
 body.ic-Login-Body {
   background-color: lightblue !important;
 }
-/* make the main login box have an acutal background, and add styling */
+/* make the main login box have an acutal background, and add styling; also center it */
 .ic-Login__innerContent {
   background-color: #ecf0f5 !important;
   border-radius: 25px !important;
   border: solid black !important;
+  /*
+  transform: translate(-50%, -50%) !important;
+  top: 50% !important;
+  left: 50% !important;
+  position: absolute !important;
+  */
+  width: 360px !important;
+  max-height: 414px !important;
 }
 /* Remove the wordy and not that nice looking footer, serves an important use though */
 body.ic-Login-Body footer#footer.ic-Login-footer {
@@ -98,7 +106,37 @@ body.ic-Login-Body .ic-Login__forgot {
   text-align: center !important;
 }
 /* Style login options panel */
-
 .ic-Login__actions {
   flex-flow: column-reverse !important;
+}
+/* Style the login button for email+pass */
+#login_form .Button.Button--login {
+  border-radius: 25px !important;
+  min-width: 120px;
+  max-width: 155px;
+  display: block;
+  margin: 20px auto 20px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  background: #c6423c;
+  border: solid medium !important;
+  border-color: transparent;
+  font-size: 14px;
+  line-height: 25px !important;
+  height: 40px !important;
+  margin-bottom: 10px !important;
+}
+#login_form .Button.Button--login:hover {
+  border: solid black !important;
+}
+#login_form > div:nth-child(5).ic-Form-control.ic-Form-control--login {
+  margin-bottom: 9px !important;
+}
+#login_form > div:nth-child(6).ic-Form-control.ic-Form-control--login {
+  margin-bottom: 0px !important;
+}
+/* match the spacing to the top */
+.ic-Login {
+  margin-top: 10% !important;
+  padding-top: 50px !important;
 }

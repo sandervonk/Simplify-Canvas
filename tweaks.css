@@ -17,26 +17,3 @@
 ::-webkit-scrollbar-track {
     opacity: 0;
 }
-#messaging-view > div > md-content > div {
-    border-left: solid lightgrey 1px;
-}
-@media (orientation: portrait), (max-width: 800px) {
-    .rkljfb-MZArnb.flex {
-      display: none !important;
-  }
-  gv-conversation-list > md-virtual-repeat-container > div {
-      width: 68px !important
-  }
-  #messaging-view > div > md-content > div {
-      max-width: 68px !important;
-      min-width: unset !important;
-  }
-  md-virtual-repeat-container *::-webkit-scrollbar {
-    display: none !important;
-  }
-  .rkljfb-H9tDt::before {
-      border-radius: 0rem;
-      height: 100%;
-      top: 0;
-  }
-}
