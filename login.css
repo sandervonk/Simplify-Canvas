@@ -39,8 +39,8 @@ body.ic-Login-Body .ic-Login__body {
 }
 /* Set height and width (constraints) for main body */
 body.ic-Login-Body .ic-Login__content {
-  max-width: 480px !important;
-  height: 360px !important;
+  width: 360px !important;
+  height: 422px !important;
 }
 /* revamp login button styling */
 #login_form > div.ic-Login__sso a.ic-Login__sso-button {
@@ -64,4 +64,41 @@ body.ic-Login-Body .ic-Login__content {
 }
 #login_form > div.ic-Login__sso a.ic-Login__sso-button > * {
   display: none;
+}
+/* give the extra options back their padding */
+body.ic-Login-Body .ic-Login__actions {
+  padding: 0px 18px;
+}
+/* Fix positioning of login box */
+body.ic-Login-Body .ic-Login__container {
+  margin-top: 0px !important;
+}
+/* Style the seperator between the button and top */
+body.ic-Login-Body .ic-Login__sso-list {
+  width: 70%;
+  border-top: 1px solid rgb(0 0 0 / 15%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: unset !important;
+}
+/* style the forgot password to make it less-noticible, because it's not often needed */
+body.ic-Login-Body #login_forgot_password:hover {
+  color: #444 !important;
+}
+body.ic-Login-Body #login_forgot_password {
+  color: #777879 !important;
+  display: inline-block !important;
+  padding: 5px !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body.ic-Login-Body .ic-Login__forgot {
+  text-align: center !important;
+}
+/* Style login options panel */
+
+.ic-Login__actions {
+  flex-flow: column-reverse !important;
 }
