@@ -20,7 +20,7 @@
       },
     "content_scripts": [{
       "css": ["tweaks.css", "login/login.css"],
-      "js": ["login/login.js"]
+      "js": ["login/login.js"],
       "matches": ["https://*.instructure.com/*"]
     }]
    
