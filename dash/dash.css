@@ -29,3 +29,19 @@
   border-top-left-radius: 25px !important;
   border-bottom-left-radius: 25px !important;
 }
+.Grouping-styles__title {
+  border-top-left-radius: 25px !important;
+}
+.Grouping-styles__items {
+  border-top-right-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+}
+li:last-of-type .PlannerItem-styles__root.planner-item,
+.CompletedItemsFacade-styles__root.planner-completed-items {
+  border-bottom-right-radius: 25px !important;
+}
+.CompletedItemsFacade-styles__root.planner-completed-items,
+li:only-of-type .PlannerItem-styles__root.planner-item {
+  border-right: solid lightgrey thin !important;
+  border-top-right-radius: 25px;
+}
