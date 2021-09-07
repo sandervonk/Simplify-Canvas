@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Simplify Canvas",
+    "version": "0.0.1",
+    "description": "Simple QOL CSS changes to Canvas by Instructure sites",
+    "author": "Sander Vonk",
+    "permissions": [
+        "storage",
+        "tabs",
+        "http://*/",
+        "https://*/"
+      ],
+    "icons": { 
+        "16": "icon/3DLogo.png",
+        "32": "icon/3DLogo.png",
+        "48": "icon/3DLogo.png",
+       "128": "icon/3DLogo.png",
+       "256": "icon/3DLogo.png",
+       "512": "icon/3DLogo.png"
+      },
+    "content_scripts": [{
+      "css": ["tweaks.css"],
+      "matches": ["https://*.instructure.com/*"]
+    }]
+   
+  }
