@@ -1,0 +1,12 @@
+:root {
+  --sidebar-top-color: #2e8eab;
+  --sidebar-bottom-color: #113e75;
+}
+/* Make the left bar never get scrunched by a scrollbar */
+#header.ic-app-header.no-print::-webkit-scrollbar {
+  display: none !important;
+  background: linear-gradient(
+    var(--sidebar-top-color),
+    var(--sidebar-bottom-color)
+  ) !important;
+}
