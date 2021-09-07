@@ -1,12 +1,31 @@
 :root {
-  --sidebar-top-color: #2e8eab;
-  --sidebar-bottom-color: #113e75;
+  --sidebar-gradient: linear-gradient(#2e8eab, #113e75);
+  --sidebar-initial: #2e8eab;
+  --sidebar-dark: #246e85;
+  --bDBte-heroBorderRadius: 25px !important;
 }
 /* Make the left bar never get scrunched by a scrollbar */
 #header.ic-app-header.no-print::-webkit-scrollbar {
   display: none !important;
-  background: linear-gradient(
-    var(--sidebar-top-color),
-    var(--sidebar-bottom-color)
-  ) !important;
+}
+/* give it a nice gradient */
+#header.ic-app-header.no-print {
+  background: var(--sidebar-gradient) !important;
+}
+#primaryNavToggle {
+  background: var(--sidebar-initial);
+}
+#primaryNavToggle:hover {
+  background: var(--sidebar-dark);
+}
+
+/* remove the ugly district logo */
+#ic-app-header__logomark {
+  display: none;
+}
+/* customize class assignments */
+[dir="ltr"] .Grouping-styles__hero,
+[dir="ltr"] .Grouping-styles__overlay {
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
 }
