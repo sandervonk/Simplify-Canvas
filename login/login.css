@@ -1,6 +1,6 @@
 /* Make the background of the login blue */
 body.ic-Login-Body {
-  background-color: lightblue !important;
+  background-color: var(--simplify-background-color) !important;
 }
 /* make the main login box have an acutal background, and add styling; also center it */
 .ic-Login__innerContent {

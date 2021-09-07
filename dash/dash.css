@@ -2,7 +2,7 @@
   --sidebar-gradient: linear-gradient(#2e8eab, #113e75);
   --sidebar-initial: #2e8eab;
   --sidebar-dark: #246e85;
-  --bDBte-heroBorderRadius: 25px !important;
+  --simplify-background-color: lightblue;
 }
 /* Make the left bar never get scrunched by a scrollbar */
 #header.ic-app-header.no-print::-webkit-scrollbar {
@@ -53,4 +53,9 @@ li:first-of-type .PlannerItem-styles__root.planner-item {
 }
 li:last-of-type .PlannerItem-styles__root.planner-item {
   border-bottom-right-radius: 25px;
+}
+.ic-Layout-wrapper,
+.Day-styles__root.planner-day,
+#dashboard_header_container {
+  background: var(--simplify-background-color) !important;
 }
