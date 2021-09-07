@@ -1,0 +1,67 @@
+/* Make the background of the login blue */
+body.ic-Login-Body {
+  background-color: lightblue !important;
+}
+/* make the main login box have an acutal background, and add styling */
+.ic-Login__innerContent {
+  background-color: #ecf0f5 !important;
+  border-radius: 25px !important;
+  border: solid black !important;
+}
+/* Remove the wordy and not that nice looking footer, serves an important use though */
+body.ic-Login-Body footer#footer.ic-Login-footer {
+  display: none !important;
+}
+/*change the school tag to fit in or just not show?*/
+.ic-Login-header__logo {
+  mix-blend-mode: darken;
+}
+/* Hide the labels that we'll add as placeholders in the text boxes */
+body.ic-Login-Body .ic-Label {
+  display: none !important;
+}
+/* style the input boxes */
+body.ic-Login-Body .ic-Input.text {
+  border-radius: 20px !important;
+  height: 45px !important;
+  border: solid #4289ad !important;
+  background-color: white !important;
+  width: 70% !important;
+  margin: 0px auto !important;
+}
+/* remove excessive links */
+body.ic-Login-Body .ic-Login-header__links {
+  display: none !important;
+}
+/* Fix for 70% width of text boxes (had to remove padding so it isn't 70% of parent) */
+body.ic-Login-Body .ic-Login__body {
+  padding: 0px !important;
+}
+/* Set height and width (constraints) for main body */
+body.ic-Login-Body .ic-Login__content {
+  max-width: 480px !important;
+  height: 360px !important;
+}
+/* revamp login button styling */
+#login_form > div.ic-Login__sso a.ic-Login__sso-button {
+  background-color: white;
+  background-image: url(https://lh3.googleusercontent.com/-60p40cNCUo8/YMJqHrzjzOI/AAAAAAAAAWE/Zk7Qynr0BB8LONnp2sZnQy99fJVARFapgCJEEGAsYHg/s512/2021-06-10.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 193px !important;
+  height: 48px;
+  aspect-ratio: 512 / 130;
+  padding: 0 !important;
+  border-radius: 25px !important;
+  border-color: transparent !important;
+  border-width: medium !important;
+  transition: none !important;
+}
+#login_form > div.ic-Login__sso a.ic-Login__sso-button:hover {
+  border-color: black !important;
+  border-width: medium !important;
+}
+#login_form > div.ic-Login__sso a.ic-Login__sso-button > * {
+  display: none;
+}
