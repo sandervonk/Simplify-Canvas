@@ -155,7 +155,12 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
   margin: 3px !important;
   border-top-left-radius: 20px !important;
   /*background-color: var(--simplify-class-title-bg) !important;*/
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+  max-height: 50% !important;
+  white-space: nowrap !important;
 }
+
 @media (min-width: 1300px) {
   .Day-styles__root.planner-day > div {
     margin-left: auto;
