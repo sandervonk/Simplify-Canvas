@@ -161,6 +161,10 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
   text-overflow: ellipsis !important;
   max-height: 50% !important;
   white-space: nowrap !important;
+  padding-left: 20px !important;
+  padding-right: 10px !important;
+  height: 50% !important;
+  line-height: 50% !important;
 }
 
 @media (min-width: 1300px) {
