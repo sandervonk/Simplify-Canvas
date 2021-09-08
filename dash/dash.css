@@ -156,7 +156,7 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
   border-top-left-radius: 20px !important;
   /*background-color: var(--simplify-class-title-bg) !important;*/
 }
-.Grouping-styles__overlay .Grouping-styles__title {
+.Grouping-styles__title {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   max-height: 50% !important;
