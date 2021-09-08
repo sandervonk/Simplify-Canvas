@@ -9,7 +9,8 @@
   --simplify-problem-color-alt: red;
   --simplify-accent-color: var(--simplify-sidebar-initial);
   --simplify-head-color: white;
-  --simplify-border-width: medium:
+  --simplify-border-width: medium;
+  --simplify-class-title-bg: #ddd;
 }
 /* Make the left bar never get scrunched by a scrollbar */
 #header.ic-app-header.no-print::-webkit-scrollbar {
@@ -42,6 +43,9 @@
 .Grouping-styles__items {
   border-top-right-radius: 25px !important;
   border-bottom-right-radius: 25px !important;
+  border-width: var(--simplify-border-width) !important;
+  border-style: solid !important;
+  border-left-style: none !important;
 }
 li:last-of-type .PlannerItem-styles__root.planner-item,
 .CompletedItemsFacade-styles__root.planner-completed-items {
@@ -51,12 +55,7 @@ li:first-child .CompletedItemsFacade-styles__root.planner-completed-items,
 li:only-of-type .PlannerItem-styles__root.planner-item {
   border-top-right-radius: 25px;
 }
-.Grouping-styles__items li > * {
-    border-right: solid lightgrey var(--simplify-border-width) !important;
-}
-.PlannerItem-styles__root.planner-item {
-  border-right: solid lightgrey var(--simplify-border-width) !important;
-}
+
 li:first-of-type .PlannerItem-styles__root.planner-item {
   border-top-right-radius: 25px;
 }
@@ -144,10 +143,26 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
   padding: 30px 30px 0px 30px !important;
 }
 .Day-styles__root.planner-day > div {
-    max-width: 1000px !important;
+  max-width: 1000px !important;
 }
 
 /* fix scaling issues */
 .ic-Layout-wrapper {
-    max-width: unset !important;
+  max-width: unset !important;
+}
+/* style class title */
+.Grouping-styles__title {
+  margin: 3px !important;
+  border-top-left-radius: 20px !important;
+  /*background-color: var(--simplify-class-title-bg) !important;*/
+}
+@media (min-width: 1300px) {
+  .Day-styles__root.planner-day > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fOyUs_bGBk.blnAQ_bGBk.blnAQ_cVrl.blnAQ_drOs.blnAQ_kWwi,
+  .fOyUs_bGBk.blnAQ_bGBk.blnAQ_cVrl.blnAQ_drOs {
+    text-align: center !important;
+  }
 }

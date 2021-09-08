@@ -4,12 +4,6 @@
     "version": "0.0.1",
     "description": "Simple QOL CSS changes to Canvas by Instructure sites",
     "author": "Sander Vonk",
-    "permissions": [
-        "storage",
-        "tabs",
-        "http://*/",
-        "https://*/"
-      ],
     "icons": { 
         "16": "icon/3DLogo.png",
         "32": "icon/3DLogo.png",
