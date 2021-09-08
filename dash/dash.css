@@ -1,8 +1,15 @@
 :root {
-  --sidebar-gradient: linear-gradient(#2e8eab, #113e75);
-  --sidebar-initial: #2e8eab;
-  --sidebar-dark: #246e85;
+  --simplify-sidebar-gradient: linear-gradient(#2e8eab, #113e75);
+  --simplify-sidebar-initial: #2e8eab;
+  --simplify-sidebar-dark: #246e85;
   --simplify-background-color: lightblue;
+  --simplify-done-color: lightgreen;
+  --simplify-done-color-alt: rgb(27, 185, 27);
+  --simplify-problem-color: pink;
+  --simplify-problem-color-alt: red;
+  --simplify-accent-color: var(--simplify-sidebar-initial);
+  --simplify-head-color: white;
+  --simplify-border-width: medium:
 }
 /* Make the left bar never get scrunched by a scrollbar */
 #header.ic-app-header.no-print::-webkit-scrollbar {
@@ -10,13 +17,13 @@
 }
 /* give it a nice gradient */
 #header.ic-app-header.no-print {
-  background: var(--sidebar-gradient) !important;
+  background: var(--simplify-sidebar-gradient) !important;
 }
 #primaryNavToggle {
-  background: var(--sidebar-initial);
+  background: var(--simplify-sidebar-initial);
 }
 #primaryNavToggle:hover {
-  background: var(--sidebar-dark);
+  background: var(--simplify-sidebar-dark);
 }
 
 /* remove the ugly district logo */
@@ -40,13 +47,15 @@ li:last-of-type .PlannerItem-styles__root.planner-item,
 .CompletedItemsFacade-styles__root.planner-completed-items {
   border-bottom-right-radius: 25px !important;
 }
-.CompletedItemsFacade-styles__root.planner-completed-items,
+li:first-child .CompletedItemsFacade-styles__root.planner-completed-items,
 li:only-of-type .PlannerItem-styles__root.planner-item {
-  border-right: solid lightgrey thin !important;
   border-top-right-radius: 25px;
 }
+.Grouping-styles__items li > * {
+    border-right: solid lightgrey var(--simplify-border-width) !important;
+}
 .PlannerItem-styles__root.planner-item {
-  border-right: solid lightgrey thin !important;
+  border-right: solid lightgrey var(--simplify-border-width) !important;
 }
 li:first-of-type .PlannerItem-styles__root.planner-item {
   border-top-right-radius: 25px;
@@ -54,8 +63,91 @@ li:first-of-type .PlannerItem-styles__root.planner-item {
 li:last-of-type .PlannerItem-styles__root.planner-item {
   border-bottom-right-radius: 25px;
 }
-.ic-Layout-wrapper,
-.Day-styles__root.planner-day,
-#dashboard_header_container {
+.ic-Layout-wrapper {
   background: var(--simplify-background-color) !important;
+}
+.Day-styles__root.planner-day,
+#dashboard_header_container,
+.ic-Dashboard-header__layout,
+.PlannerHeader-styles__root.PlannerHeader {
+  background: transparent !important;
+}
+/* add bg to now background-less tasks */
+.CompletedItemsFacade-styles__root.planner-completed-items,
+.PlannerItem-styles__root.planner-item {
+  background: #f4f5f8 !important;
+}
+/* Customize late and missing tags */
+.dLyYq_zGXc {
+  background: var(--simplify-problem-color) !important;
+  color: var(--simplify-problem-color-alt) !important;
+  border-color: var(--simplify-problem-color-alt) !important;
+  text-shadow: 0 0 1px white !important;
+}
+/* Customize graded and submitted tags */
+.dLyYq_bXiG {
+  background: var(--simplify-done-color) !important;
+  color: var(--simplify-done-color-alt) !important;
+  border-color: var(--simplify-done-color-alt) !important;
+  text-shadow: 0 0 1px white !important;
+}
+
+/* remove 'Nothing Planned Yet's */
+.fOyUs_bGBk.fOyUs_ImeN.fOyUs_UeJS {
+  display: none;
+}
+.Day-styles__root.planner-day {
+  margin-top: 1rem;
+}
+.fOyUs_bGBk.blnAQ_bGBk.blnAQ_cVrl.blnAQ_drOs.blnAQ_kWwi {
+  border-bottom-style: none !important;
+  opacity: 0.5;
+}
+/* Style the current day */
+.Day-styles__root.planner-day.planner-today * {
+  opacity: 1 !important;
+}
+.Day-styles__root.planner-day.planner-today {
+  text-shadow: 2px 2px 1px rgba(128, 128, 128, 0.445);
+  color: rgb(1, 85, 85);
+}
+/* style the new activity indicator showing over important things */
+#new_activity_button {
+  opacity: 0.7;
+  border-radius: 0 0 15px 15px;
+  transition: opacity ease-in-out 0.25s;
+}
+#new_activity_button:hover {
+  opacity: 1 !important;
+}
+/* move the padding to individual objects so that the top menu can be full width */
+.ic-Layout-contentMain {
+  padding: 0 0 25px 0 !important;
+}
+.ic-Dashboard-header__layout {
+  padding: 0px 24px !important;
+  border-bottom: none !important;
+  filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.5)) !important;
+  background: var(--simplify-accent-color) !important;
+}
+.ic-Dashboard-header__layout,
+.ic-Dashboard-header__layout * {
+  color: var(--simplify-head-color);
+}
+#planner-today-btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  border-color: var(--simplify-head-color);
+  border-width: var(--simplify-border-width);
+}
+#dashboard-planner {
+  padding: 30px 30px 0px 30px !important;
+}
+.Day-styles__root.planner-day > div {
+    max-width: 1000px !important;
+}
+
+/* fix scaling issues */
+.ic-Layout-wrapper {
+    max-width: unset !important;
 }
