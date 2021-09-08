@@ -1,19 +1,22 @@
+:root {
+  --simplify-background-color: lightblue;
+}
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-corner {
-    background: none;
+  background: none;
 }
 ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background: rgba(127, 127, 127, 0.6);
+  border-radius: 4px;
+  background: rgba(127, 127, 127, 0.6);
 }
 ::-webkit-scrollbar-track {
-    opacity: 1 !important;
-    background-color: white;
+  opacity: 1 !important;
+  background-color: var(--simplify-background-color);
 }
 ::-webkit-scrollbar-track {
-    opacity: 0;
+  /*opacity: 0;*/
 }
