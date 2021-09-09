@@ -8,16 +8,18 @@
   --simplify-problem-color: pink;
   --simplify-problem-color-alt: red;
   --simplify-accent-color: var(--simplify-sidebar-initial);
-  --simplify-head-color: white;
+  --simplify-head-color: black;
   --simplify-border-width: medium;
   --simplify-class-title-bg: #ddd;
+  --simplify-nav-color: white;
+  --simplify-assignment-bg: white;
 }
 /* Make the left bar never get scrunched by a scrollbar */
 #header.ic-app-header.no-print::-webkit-scrollbar {
   display: none !important;
 }
 /* give it a nice gradient */
-#header.ic-app-header.no-print {
+#header.ic-app-header {
   background: var(--simplify-sidebar-gradient) !important;
 }
 #primaryNavToggle {
@@ -123,12 +125,10 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
 .ic-Layout-contentMain {
   padding: 0 0 25px 0 !important;
 }
-.ic-Dashboard-header__layout {
-  padding: 0px 24px !important;
-  border-bottom: none !important;
-  filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.5)) !important;
-  background: var(--simplify-accent-color) !important;
+.ic-Layout-columns {
+  padding: 20px !important;
 }
+
 .ic-Dashboard-header__layout,
 .ic-Dashboard-header__layout * {
   color: var(--simplify-head-color);
@@ -166,7 +166,32 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
   height: 50% !important;
   line-height: 50% !important;
 }
-.planner-empty-days {
+
+/* Style the top bar on assignments */
+.ic-app-nav-toggle-and-crumbs,
+.ic-Dashboard-header__layout {
+  margin: 0px !important;
+  padding: 0 24px !important;
+  background: var(--simplify-nav-color) !important;
+  box-shadow: 0 3px 1px #00000033;
+  height: 86px !important;
+  min-height: unset !important;
+}
+body.dashboard-is-planner .ic-Layout-columns {
+  padding: 0px !important;
+}
+/* Customize iframe containers + submission containers */
+.submission-details-container,
+iframe#tool_content,
+.tool_content_wrapper iframe {
+  border-radius: 25px !important;
+  overflow: hidden !important;
+  border: solid var(--simplify-accent-color) var(--simplify-border-width) !important;
+  background: var(--simplify-assignment-bg) !important;
+}
+
+.planner-empty-days,
+nav#breadcrumbs {
   background: transparent !important;
   border-style: none !important;
 }
@@ -180,3 +205,13 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
     text-align: center !important;
   }
 }
+/* floating top bar 
+.ic-Layout-columns {
+  margin-top: 90px !important;
+}
+.ic-app-nav-toggle-and-crumbs {
+  width: 100% !important;
+  z-index: 10000 !important;
+  position: fixed !important;
+}
+*/
