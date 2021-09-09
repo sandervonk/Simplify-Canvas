@@ -318,3 +318,20 @@ li:last-child .ToDoSidebarItem {
 .item-group-condensed.context_module .footer {
   display: none !important;
 }
+
+/* better collapsed navbar */
+
+body.primary-nav-transitions .ic-app-header__menu-list,
+body.primary-nav-transitions
+  .ic-app-header__menu-list:not(.primary-nav-expanded) {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-between;
+}
+.ic-app-header__menu-list-item {
+  aspect-ratio: 1 / 1;
+}
+.ic-app-header__menu-list-item > * {
+  height: 100%;
+}
