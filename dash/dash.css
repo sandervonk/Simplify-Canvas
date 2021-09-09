@@ -243,7 +243,7 @@ nav#breadcrumbs,
 .conversations header.panel button,
 .module-sequence-footer-button--previous *[role="button"],
 .module-sequence-footer-button--next *[role="button"] {
-  border-radius: 25px;
+  border-radius: 25px !important;
   background: #ffffffaa;
   border: solid var(--simplify-border-width) var(--simplify-accent-color);
 }
