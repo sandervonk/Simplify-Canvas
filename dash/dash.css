@@ -322,8 +322,7 @@ li:last-child .ToDoSidebarItem {
 /* better collapsed navbar */
 
 body.primary-nav-transitions .ic-app-header__menu-list,
-body.primary-nav-transitions
-  .ic-app-header__menu-list:not(.primary-nav-expanded) {
+body:not(.primary-nav-expanded) .ic-app-header__menu-list {
   display: flex;
   flex-direction: column;
   height: 80%;
@@ -334,4 +333,10 @@ body.primary-nav-transitions
 }
 .ic-app-header__menu-list-item > * {
   height: 100%;
+}
+body:not(.primary-nav-expanded) .ic-app-nav-toggle-and-crumbs,
+body.primary-nav-transitions .ic-Dashboard-header__layout,
+body.primary-nav-transitions .ic-app-nav-toggle-and-crumbs,
+body:not(.primary-nav-expanded) .ic-Dashboard-header__layout {
+  height: 77px !important;
 }
