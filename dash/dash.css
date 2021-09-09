@@ -240,6 +240,7 @@ nav#breadcrumbs,
 /* main class dashboards */
 #right-side-wrapper > button,
 .btn.button-sidebar-wide,
+.conversations header.panel button,
 .module-sequence-footer-button--previous *[role="button"],
 .module-sequence-footer-button--next *[role="button"] {
   border-radius: 25px;
