@@ -284,3 +284,30 @@ li:last-child .ToDoSidebarItem {
     filter: drop-shadow(0px 0px 4px var(--simplify-accent-color)) !important;
   }
 }
+/* modules pages */
+.header-bar {
+  background: transparent !important;
+  border: none !important;
+}
+.header-bar .btn,
+.header-bar button {
+  border-radius: 25px;
+  background: #ffffffaa;
+  border: solid var(--simplify-border-width) var(--simplify-accent-color);
+}
+#context_modules_sortable_container {
+  background: transparent;
+}
+.item-group-condensed.context_module {
+  border-radius: 25px !important;
+  overflow: hidden !important;
+  padding: 0px !important;
+  margin: 9px !important;
+  margin-bottom: 40px !important;
+}
+.item-group-condensed.context_module .ig-header.header {
+  margin-top: 0 !important;
+}
+.item-group-condensed.context_module .footer {
+  display: none !important;
+}
