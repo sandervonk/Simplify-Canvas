@@ -172,7 +172,8 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
 
 /* Style the top bar on assignments */
 .ic-app-nav-toggle-and-crumbs,
-.ic-Dashboard-header__layout {
+.ic-Dashboard-header__layout,
+.conversations header.panel {
   margin: 0px !important;
   padding: 0 24px !important;
   background: var(--simplify-nav-color) !important;
@@ -337,6 +338,25 @@ body:not(.primary-nav-expanded) .ic-app-header__menu-list {
 body:not(.primary-nav-expanded) .ic-app-nav-toggle-and-crumbs,
 body.primary-nav-transitions .ic-Dashboard-header__layout,
 body.primary-nav-transitions .ic-app-nav-toggle-and-crumbs,
-body:not(.primary-nav-expanded) .ic-Dashboard-header__layout {
+body:not(.primary-nav-expanded) .ic-Dashboard-header__layout,
+body:not(.primary-nav-expanded) .conversations header.panel,
+body.primary-nav-transitions .conversations header.panel {
   height: 77px !important;
+}
+/* sidebar tweaks */
+.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active
+  .ic-app-header__menu-list-link {
+  border-radius: 25px 0px 0px 25px !important;
+}
+#menu
+  > li.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active
+  > #global_nav_dashboard_link,
+#menu
+  > li.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active
+  > #global_nav_calendar_link,
+#menu
+  > li.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active
+  > #global_nav_conversations_link,
+#context_external_tool_55_menu_item.ic-app-header__menu-list-item--active {
+  background: var(--simplify-background-color) !important;
 }

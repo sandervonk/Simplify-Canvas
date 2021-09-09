@@ -23,9 +23,11 @@
   /*opacity: 0;*/
 }
 
-#nav-tray-portal *::-webkit-scrollbar-track {
+#nav-tray-portal *::-webkit-scrollbar-track,
+.message-list-scroller::-webkit-scrollbar-track {
   background-color: var(--simplify-sidebar-bg);
 }
-#nav-tray-portal *::-webkit-scrollbar-thumb {
+#nav-tray-portal *::-webkit-scrollbar-thumb,
+.message-list-scroller::-webkit-scrollbar-thumb {
   border: 5px solid var(--simplify-sidebar-bg);
 }
