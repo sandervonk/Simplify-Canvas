@@ -166,7 +166,10 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
   height: 50% !important;
   line-height: 50% !important;
 }
-
+.planner-empty-days {
+  background: transparent !important;
+  border-style: none !important;
+}
 @media (min-width: 1300px) {
   .Day-styles__root.planner-day > div {
     margin-left: auto;
