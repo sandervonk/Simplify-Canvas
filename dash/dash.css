@@ -297,6 +297,9 @@ li:last-child .ToDoSidebarItem {
 }
 #context_modules_sortable_container {
   background: transparent;
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .item-group-condensed.context_module {
   border-radius: 25px !important;
@@ -304,6 +307,10 @@ li:last-child .ToDoSidebarItem {
   padding: 0px !important;
   margin: 9px !important;
   margin-bottom: 40px !important;
+  /*border: solid var(--simplify-border-width) transparent;*/
+}
+.item-group-condensed.context_module.collapsed_module {
+  /*border: solid var(--simplify-border-width) #ffffffaa;*/
 }
 .item-group-condensed.context_module .ig-header.header {
   margin-top: 0 !important;
