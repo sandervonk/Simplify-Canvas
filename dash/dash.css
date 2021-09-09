@@ -136,7 +136,7 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
 #planner-today-btn {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
-  border-color: var(--simplify-head-color);
+  border-color: var(--simplify-accent-color);
   border-width: var(--simplify-border-width);
 }
 #dashboard-planner {
@@ -144,6 +144,9 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
 }
 .Day-styles__root.planner-day > div {
   max-width: 1000px !important;
+}
+.Grouping-styles__root.planner-grouping {
+  filter: drop-shadow(0px 0px 2px var(--simplify-accent-color)) !important;
 }
 
 /* fix scaling issues */
@@ -191,7 +194,8 @@ iframe#tool_content,
 }
 
 .planner-empty-days,
-nav#breadcrumbs {
+nav#breadcrumbs,
+.module-sequence-footer-content {
   background: transparent !important;
   border-style: none !important;
 }
@@ -215,3 +219,68 @@ nav#breadcrumbs {
   position: fixed !important;
 }
 */
+/* customize courses sidebar */
+#nav-tray-portal > span > span {
+  border-radius: 25px !important;
+}
+#nav-tray-portal > span > span > div > div > div > span > button {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+/* calendar page customizations */
+#calendar_header .header-bar.flex-container {
+  background: transparent;
+}
+#calendar_header .header-bar.flex-container button {
+  border-radius: 25px;
+  background: #ffffffaa;
+  border: solid var(--simplify-border-width) var(--simplify-accent-color);
+}
+/* main class dashboards */
+#right-side-wrapper > button,
+.btn.button-sidebar-wide,
+.module-sequence-footer-button--previous *[role="button"],
+.module-sequence-footer-button--next *[role="button"] {
+  border-radius: 25px;
+  background: #ffffffaa;
+  border: solid var(--simplify-border-width) var(--simplify-accent-color);
+}
+.todo-list.Sidebar__TodoListContainer {
+  background: var(--simplify-assignment-bg) !important;
+  padding: 1px 20px 8px 20px !important;
+  border-radius: 25px 25px 0px 0px !important;
+  border: solid var(--simplify-border-width) var(--simplify-accent-color) !important;
+  border-bottom-style: none !important;
+}
+.events_list.recent_feedback {
+  margin-top: 0px !important;
+  background: var(--simplify-assignment-bg) !important;
+  padding: 0px 20px 5px 20px !important;
+  border-radius: 0px 0px 25px 25px !important;
+  border: solid var(--simplify-border-width) var(--simplify-accent-color) !important;
+  border-top-style: none !important;
+  transform: translateY(-8px) !important;
+}
+li:last-child .ToDoSidebarItem {
+  margin-bottom: 0px !important;
+}
+/* notification settings page */
+
+.fOyUs_bGBk.erOvu_bGBk.erOvu_bvTK {
+  border-radius: 25px !important;
+  overflow: hidden !important;
+  border: solid var(--simplify-border-width) var(--simplify-accent-color) !important;
+}
+.fOyUs_bGBk.fOyUs_desw.bDzpk_bGBk.bDzpk_busO.bDzpk_cQFX.bDzpk_bZNM {
+  max-width: 1000px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media (min-width: 768px) {
+  .fOyUs_bGBk.fOyUs_desw.bDzpk_bGBk.bDzpk_busO.bDzpk_cQFX.bDzpk_bZNM {
+    transform: translateX(-84px);
+  }
+  .fOyUs_bGBk.fOyUs_fKlg.dJCgj_bGBk {
+    filter: drop-shadow(0px 0px 4px var(--simplify-accent-color)) !important;
+  }
+}
