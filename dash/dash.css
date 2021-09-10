@@ -361,3 +361,10 @@ body.primary-nav-transitions .conversations header.panel {
 #context_external_tool_55_menu_item.ic-app-header__menu-list-item--active {
   background: var(--simplify-background-color) !important;
 }
+/* remove empty day svg */
+.EmptyDays-styles__nothingPlannedContent {
+  padding-top: 80px !important;
+}
+.EmptyDays-styles__root.planner-empty-days svg {
+  display: none !important;
+}
