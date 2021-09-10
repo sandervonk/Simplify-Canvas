@@ -145,5 +145,5 @@ body.ic-Login-Body .ic-Login__forgot {
 /* match the spacing to the top */
 .ic-Login {
   margin-top: 10% !important;
-  padding-top: 50px !important;
+  padding-top: 0px !important;
 }
