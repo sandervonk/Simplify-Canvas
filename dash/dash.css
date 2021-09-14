@@ -368,3 +368,63 @@ body.primary-nav-transitions .conversations header.panel {
 .EmptyDays-styles__root.planner-empty-days svg {
   display: none !important;
 }
+.menu-item.ic-app-header__menu-list-item {
+  border-radius: 25px 0px 0px 25px !important;
+  overflow: hidden !important;
+}
+.ic-app-header__menu-list-item > a {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.ic-app-header__menu-list-item > a > svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-group button {
+  border-right-style: none !important;
+  border-radius: 0px !important;
+}
+.btn-group button:first-child {
+  border-radius: 25px 0px 25px 0px !important;
+}
+.btn-group button:last-child {
+  border-right-style: solid !important;
+  border-radius: 0px 25px 25px 0px !important;
+}
+.conversations header.panel .btn-group button {
+  border-right-style: none !important;
+  border-radius: 0px !important;
+}
+.conversations header.panel .btn-group button:first-child {
+  border-radius: 25px 0px 0px 25px !important;
+}
+.conversations header.panel .btn-group button:last-child {
+  border-right-style: solid !important;
+  border-radius: 0px 25px 25px 0px !important;
+}
+div[role="search"] button.ac-search-btn,
+#conversation_filter_select {
+  border: solid var(--simplify-accent-color) var(--simplify-border-width) !important;
+  border-radius: 0px 25px 25px 0px !important;
+  border-left-style: none !important;
+}
+div[role="search"] .ac-input-box {
+  height: 100% !important;
+  border-radius: 25px 0px 0px 25px;
+  border: solid var(--simplify-accent-color) var(--simplify-border-width) !important;
+}
+.fxIji_bGBk.fxIji_DpxJ.fxIji_bWOh.fxIji_NmrE.fxIji_buDT.fxIji_bBOa {
+  height: 100% !important;
+}
+.ic-app-header__secondary-navigation
+  li.menu-item.ic-app-header__menu-list-item {
+  padding: 10px !important;
+}
+#primaryNavToggle {
+  border-radius: 25px !important;
+  overflow: hidden !important;
+}
+#primaryNavToggle[aria-label="Expand global navigation"] {
+  border-radius: 0px !important;
+}
