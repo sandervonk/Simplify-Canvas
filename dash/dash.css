@@ -108,6 +108,10 @@ li:last-of-type .PlannerItem-styles__root.planner-item {
 .Day-styles__root.planner-day.planner-today * {
   opacity: 1 !important;
 }
+.Day-styles__root.planner-day.planner-today > div {
+  box-shadow: none;
+  text-shadow: none;
+}
 .Day-styles__root.planner-day.planner-today {
   text-shadow: 2px 2px 1px rgba(128, 128, 128, 0.445);
   color: rgb(1, 85, 85);
