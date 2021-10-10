@@ -16,7 +16,7 @@
     {
       "css": ["tweaks.css", "login/login.css", "dash/dash.css"],
       "js": ["login/login.js", "dash/dash.js"],
-      "matches": ["https://*.instructure.com/*"]
+      "matches": ["https://bcourses.berkeley.edu/*"]
     }
   ]
 }
